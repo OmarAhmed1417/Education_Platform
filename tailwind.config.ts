@@ -11,7 +11,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        orangecolor: "#F98149",
+        page:'#FFFF',
+        links:"#8A948C",
+        secondcolor:"#003F7D",
+        form:'#B1B1B1'
       },
+      width:{
+        btns:'150px'
+      }
     },
   },
   plugins: [],
