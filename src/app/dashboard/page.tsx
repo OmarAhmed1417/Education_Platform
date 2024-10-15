@@ -12,6 +12,7 @@ import Update from './updatecourse/Update';
 import Delete from './deletecourse/Delete';
 import Link from 'next/link';
 import User from './users/Users';
+import QA from './Question and answer/Q&A';
 
 export default function Dashboard() {
     const [activeComponent, setActiveComponent] = useState('dashboard');
@@ -27,6 +28,8 @@ export default function Dashboard() {
                 return <Delete />;
             case 'View Users':
                 return <User/>
+            case 'Q&A':
+                return <QA/>
         
             default:
                 return (
@@ -96,6 +99,15 @@ export default function Dashboard() {
                                 onClick={() => setActiveComponent('View Users')}
                             >
                                 <FaUser className="mr-3" /> View Users
+                            </button>
+
+                        </li>
+                            <li className="hover:bg-orangecolor p-4 rounded-lg transition-colors">
+                            <button
+                                className="flex items-center w-full text-left"
+                                onClick={() => setActiveComponent('Q&A')}
+                            >
+                                <FaBook className="mr-3" /> Q&A
                             </button>
                         </li>
                     </ul>

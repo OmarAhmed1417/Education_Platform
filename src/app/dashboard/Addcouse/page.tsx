@@ -79,6 +79,8 @@ export default function AddCourse() {
           </div>
         </form>
       </div>
+
+      
     </div>
   );
 }
